@@ -19,6 +19,7 @@ Lightweight “spin the wheel” demo with **safe/super** zones, **walk-away** f
 ## Systems (short)
 - **Progression:** `ProgressionConfig` (SO) defines zone cadence (safe **5**, super **30**), **per-zone multiplier**, **tier factors**, and **cap**. Multiplier is computed once per zone and applied to numeric rewards.
 - **Wheel & Slices:** `Wheel` assigns `Slot.Slice { reward, baseAmount, amount }`. Each `Slot` renders its icon/text from its **Slice**.
+- - **Rewards & Tier Configs (ScriptableObjects):** `Reward` (SO) holds `{ id, type, icon, baseAmount }`. `WheelConfig` (SO) defines the tier look (`wheelSprite`) and a weighted pool `possibleRewards` of `(Reward, chance)` plus `howManyBomb` (Bronze only). When a wheel is generated, a reward is drawn by weight from that tier’s pool; bombs are skipped for Silver/Gold. Each slice’s `amount` is computed as `floor(baseAmount × currentMultiplier)` for numeric rewards (bombs/non-numeric = 0). This keeps content fully data-driven and easily scalable across Bronze/Silver/Gold.
   - **Bronze:** injects exactly **N** bombs from config.
   - **Silver/Gold:** never contain bombs.
 - **Inventory:** run **stash** + ordered pickup **history**; **Gold** tracked separately; call `BankStash()` on **Leave**.

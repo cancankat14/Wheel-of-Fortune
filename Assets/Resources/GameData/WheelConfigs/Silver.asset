@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 932a3c3e272b8442b982fb8343a7890c, type: 3}
+  m_Name: Silver
+  m_EditorClassIdentifier: 
+  wheelSprite: {fileID: 21300000, guid: 88cf5bf228b9949e8841611b54789973, type: 3}
+  tier: 1
+  possibleRewards:
+  - reward: {fileID: 11400000, guid: a7239763afda44087904a211fd1ca10f, type: 2}
+    chance: 15
+  - reward: {fileID: 11400000, guid: 77994277285ce4a03a63120472fbf955, type: 2}
+    chance: 4
+  - reward: {fileID: 11400000, guid: bed1f1dc23ac149e4983ab1ada880fe0, type: 2}
+    chance: 1
+  - reward: {fileID: 11400000, guid: 6342a5a0a440b47059c2b4632c70d4e6, type: 2}
+    chance: 15
+  - reward: {fileID: 11400000, guid: 67a83801121c740949ac6e6278117a58, type: 2}
+    chance: 10
+  - reward: {fileID: 11400000, guid: 72d95e5aab26b46d48564351555f7f8a, type: 2}
+    chance: 5
+  - reward: {fileID: 11400000, guid: 02364628e84eb42b680983c1a30b9097, type: 2}
+    chance: 30
+  - reward: {fileID: 11400000, guid: 06925fde511cd4e7db3c340bbe17186e, type: 2}
+    chance: 20
+  howManyBomb: 1
